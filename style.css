@@ -1,0 +1,20 @@
+* {
+    gap: 0rem;
+}
+.moghit-malak {
+    /* height: 100px; */
+    /* width: 100px; */
+    background-color: #181824;
+}
+
+.ayoub-hanae {
+   /* height: 100px; */
+   background-color: #AAAAAA;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(250px, 30%) 1fr;
+    grid-template-rows: 100vh;
+    
+}
