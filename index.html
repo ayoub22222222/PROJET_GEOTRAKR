@@ -9,11 +9,25 @@
 <body>
     <section class="moghit-malak">
         <div class="container">
+            <!-- Geotrakr title with emoji -->
             <div class="top">
                 <h1 class="title">GeoTrakr</h1>
-                <img class="location-icon" src="../PROJET_GEOTRAKR/image/loc.png" alt="location icon" />
+                <img class="location-icon" src="../PROJET_GEOTRAKR/img/loc.png" alt="location icon" />
             </div>
+            <!-- Events -->
             <div class="bodyform">
+                <div class="div-form">
+                    <h1 class="form-tit">Add new event</h1>
+                    <form action="" class="form-event">
+                        <input class="event" type="text" list="list-options" name="choix" placeholder="Select sport"/>
+                        <datalist id="list-options">
+                            <option value="Course"></option>
+                            <option value="Vélo"></option>
+                        </datalist>
+                        <input class="event" type="number" name="distance" placeholder="Distance (KM)"/>
+                        <input class="event" type="number" name="duration" placeholder="duration (MIN)"/>
+                    </form>
+                </div>
                 <div class="bg1-fr">
                     <div class="bg2-f">
                         <h2 class="event-title">Course le 28 novembre</h2>
@@ -28,7 +42,7 @@
                                 <h3 class="n-dis">340</h3>
                                 <p class="un-dis">MIN</p>
                             </div>
-                            <div class="distance" id="distance">
+                             <div class="distance" id="distance">
                                 <img class="time-icon" src="../PROJET_GEOTRAKR/img/thunder-bolt.png" alt="run-icon" />
                                 <h3 class="n-dis">9.7</h3>
                                 <p class="un-dis">MIN/KM</p>
