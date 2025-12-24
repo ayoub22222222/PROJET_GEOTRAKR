@@ -19,13 +19,15 @@
                 <div class="div-form">
                     <h1 class="form-tit">Add new event</h1>
                     <form action="" class="form-event">
-                        <input class="event" type="text" list="list-options" name="choix" placeholder="Select sport"/>
-                        <datalist id="list-options">
-                            <option value="Course"></option>
-                            <option value="Vélo"></option>
-                        </datalist>
+                        <select class="event" id="list-options">
+                            <option value="">Séléctionner un événement</option>
+                            <option value="Course">Course</option>
+                            <option value="Vélo">Vélo</option>
+                        </select>
                         <input class="event" type="number" name="distance" placeholder="Distance (KM)"/>
                         <input class="event" type="number" name="duration" placeholder="duration (MIN)"/>
+                        <input class="event" type="number" name="cadence" placeholder="Cadence (SPM)"/>
+                        <input class="event" type="number" name="elevation" placeholder="Dénivelé (M)"/>
                     </form>
                 </div>
                 <div class="bg1-fr">
