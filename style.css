@@ -7,6 +7,161 @@
     background-color: #181824;
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.title {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.location-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.div-form {
+    background-color: #33334d;
+    margin: 3rem; 
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.form-tit {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem; 
+    margin-top: 2rem;
+    gap: 0.8rem;
+}
+
+.event{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.bg1-fr {
+    background-color: #f60051;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bg1-fv {
+    background-color: #48d5ff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bg2-f {
+    display: flex;
+    flex-direction: column;
+    background-color: #242437;
+    border-radius: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 1rem;
+    margin-left: 0.3rem;
+}
+
+.bodyform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bg1-fr:hover .bg2-f {
+    background-color: #33334d;
+}
+
+.bg1-fv:hover .bg2-f {
+    background-color: #33334d;
+}
+
+
+.event-title {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-prop {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem;
+    gap: 0.6rem;
+}
+
+.distance {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    color: #a4a4b9;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    margin: 0rem;
+    gap: 0.1rem;
+}
+
+.n-dis  {
+    font-size: 1rem;
+    margin: 0rem;
+}
+
+.un-dis {
+    font-size: 0.7rem;
+    margin: 0rem;
+    margin-bottom: 0.1rem;
+}
+
+.run-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem;
+}
+
+.bike-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem;
+}
+
+.time-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0rem;
+    margin-bottom: 0.1rem;
+}
+
 .ayoub-hanae {
    /* height: 100px; */
    background-color: #AAAAAA;
@@ -15,6 +170,5 @@
 body {
     display: grid;
     grid-template-columns: minmax(250px, 30%) 1fr;
-    grid-template-rows: 100vh;
-    
+    grid-template-rows: 100vh;  
 }
