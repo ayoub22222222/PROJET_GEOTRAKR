@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,6 +17,61 @@
             </div>
             <!-- Events -->
             <div class="bodyform">
+                <div class="bg1-fr" id="coursee">
+                    <div class="bg2-f">
+                        <h2 class="event-title">Course le 28 novembre</h2>
+                        <div class="event-prop">
+                            <div class="distance" id="course-distance">
+                                <img class="run-icon" src="../PROJET_GEOTRAKR/img/chart.png" alt="run-icon" />
+                                <h3 class="n-dis">35</h3>
+                                <p class="un-dis">KM</p>
+                            </div>
+                            <div class="distance" id="course-duration">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/time.png" alt="run-icon" />
+                                <h3 class="n-dis">340</h3>
+                                <p class="un-dis">MIN</p>
+                            </div>
+                             <div class="distance" id="course-pace">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/thunder-bolt.png" alt="run-icon" />
+                                <h3 class="n-dis">9.7</h3>
+                                <p class="un-dis">MIN/KM</p>
+                            </div>
+                            <div class="distance" id="course-cadence">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/foot.png" alt="run-icon" />
+                                <h3 class="n-dis">90</h3>
+                                <p class="un-dis">SPM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg1-fv" id="bikee">
+                    <div class="bg2-f">
+                        <h2 class="event-title">Vélo 28 novembre</h2>
+                        <div class="event-prop">
+                            <div class="distance" id="bike-distance">
+                                <img class="bike-icon" src="../PROJET_GEOTRAKR/img/bike.png" alt="run-icon" />
+                                <h3 class="n-dis">23</h3>
+                                <p class="un-dis">KM</p>
+                            </div>
+                            <div class="distance" id="bike-duration">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/time.png" alt="run-icon" />
+                                <h3 class="n-dis">80</h3>
+                                <p class="un-dis">MIN</p>
+                            </div>
+                            <div class="distance" id="bike-speed">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/thunder-bolt.png" alt="run-icon" />
+                                <h3 class="n-dis">17.3</h3>
+                                <p class="un-dis">KM/H</p>
+                            </div>
+                            <div class="distance" id="bike-elevation">
+                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/mountain.png" alt="run-icon" />
+                                <h3 class="n-dis">356</h3>
+                                <p class="un-dis">M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="div-form">
                     <h1 class="form-tit">Add new event</h1>
                     <form action="" class="form-event">
@@ -24,66 +80,14 @@
                             <option value="Course">Course</option>
                             <option value="Vélo">Vélo</option>
                         </select>
-                        <input class="event" type="number" name="distance" placeholder="Distance (KM)"/>
+                        <input class="event" type="number" name="distance"  placeholder="Distance (KM)"/>
                         <input class="event" type="number" name="duration" placeholder="duration (MIN)"/>
-                        <input class="event" type="number" name="cadence" placeholder="Cadence (SPM)"/>
-                        <input class="event" type="number" name="elevation" placeholder="Dénivelé (M)"/>
+                        <input class="event" type="number" name="cadence" id="cadence" placeholder="Cadence (SPM)"/>
+                        <input class="event" type="number" name="elevation" id="elevation" placeholder="Dénivelé (M)"/>
+                        <button class="btn-event" type="submit">Ajouter</button>
                     </form>
                 </div>
-                <div class="bg1-fr">
-                    <div class="bg2-f">
-                        <h2 class="event-title">Course le 28 novembre</h2>
-                        <div class="event-prop">
-                            <div class="distance" id="distance">
-                                <img class="run-icon" src="../PROJET_GEOTRAKR/img/chart.png" alt="run-icon" />
-                                <h3 class="n-dis">35</h3>
-                                <p class="un-dis">KM</p>
-                            </div>
-                            <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/time.png" alt="run-icon" />
-                                <h3 class="n-dis">340</h3>
-                                <p class="un-dis">MIN</p>
-                            </div>
-                             <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/thunder-bolt.png" alt="run-icon" />
-                                <h3 class="n-dis">9.7</h3>
-                                <p class="un-dis">MIN/KM</p>
-                            </div>
-                            <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/foot.png" alt="run-icon" />
-                                <h3 class="n-dis">90</h3>
-                                <p class="un-dis">SPM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg1-fv">
-                    <div class="bg2-f">
-                        <h2 class="event-title">Vélo 28 novembre</h2>
-                        <div class="event-prop">
-                            <div class="distance" id="distance">
-                                <img class="bike-icon" src="../PROJET_GEOTRAKR/img/bike.png" alt="run-icon" />
-                                <h3 class="n-dis">23</h3>
-                                <p class="un-dis">KM</p>
-                            </div>
-                            <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/time.png" alt="run-icon" />
-                                <h3 class="n-dis">80</h3>
-                                <p class="un-dis">MIN</p>
-                            </div>
-                            <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/thunder-bolt.png" alt="run-icon" />
-                                <h3 class="n-dis">17.3</h3>
-                                <p class="un-dis">KM/H</p>
-                            </div>
-                            <div class="distance" id="distance">
-                                <img class="time-icon" src="../PROJET_GEOTRAKR/img/mountain.png" alt="run-icon" />
-                                <h3 class="n-dis">356</h3>
-                                <p class="un-dis">M</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
